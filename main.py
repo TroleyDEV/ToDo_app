@@ -20,7 +20,10 @@ while True:
             todos = file.readlines()
             file.close()
 
+         #   new_todos = [item.strip('\n') for item in todos]                            # list comprehensions
+
             for index, item in enumerate(todos):
+                item = item.strip('\n')
                 row = f"{index + 1}-{item}"
                 print(row)
         case 'edit':
@@ -35,6 +38,3 @@ while True:
             break
 
 print("Bye!")
-
-
-Changes to file
