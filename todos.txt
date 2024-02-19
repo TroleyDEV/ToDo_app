@@ -1,6 +1,3 @@
 task one
 task two
 task three
-task one
-task two
-yes
