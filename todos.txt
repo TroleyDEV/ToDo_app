@@ -1,3 +1,5 @@
-task one
-task two
-task three
+clean
+throw
+fuck
+siema
+show siema
