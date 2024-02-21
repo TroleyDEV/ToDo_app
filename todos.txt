@@ -2,4 +2,3 @@ clean
 throw
 fuck
 siema
-show siema
