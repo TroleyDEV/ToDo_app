@@ -1,12 +1,7 @@
+from bonus.converters14 import convert
 from bonus.parsers14 import parse
 
 feet_inches = input("Enter feet and inches: ")
-
-
-def convert(feet, inches):
-    meters = feet * 0.3048 + inches * 0.0254
-    return meters
-
 
 parsed = parse(feet_inches)
 
