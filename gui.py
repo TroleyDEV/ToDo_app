@@ -38,7 +38,7 @@ while True:
             window['todos'].update(values=todos)
         case 'todos':
             window['todo'].update(value=values['todos'][0])
-        case sg.WINDOW_CLOSED:
+        case sg.WINDOW_CLOSED:  # Closes program on 'x'
             break
 
 window.close()

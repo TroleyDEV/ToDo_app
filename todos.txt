@@ -1,12 +1,2 @@
 clean
 throw
-eloelo
-elo
-elo
-elo
-elo
-elo
-elo
-elo
-elo
-elo
