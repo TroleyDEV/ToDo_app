@@ -1,6 +1,6 @@
 # ToDo App
 
-This ToDo app is a simple project that I created while learning Python through a Udemy course. It serves as a practical application of the fundamental concepts and skills I acquired during the course. The app allows users to manage their tasks, providing a basic yet effective platform for organizing and keeping track of daily activities.
+This ToDo app is a simple project that I created while learning Python through a Udemy course. It serves as a practical application of the fundamental concepts and skills I acquired during the course. The app allows users to manage their tasks
 
 ## Features
 
