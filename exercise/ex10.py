@@ -38,7 +38,7 @@ while True:
                 meters = float(values["feet"]) * 0.3048 + float(values["inches"]) * 0.0254
                 window["result"].update(value=f'{meters} m')
             except ValueError:
-                sg.popup("Please enter correct Value")
+                sg.popup("Please provide two numbers")
         case "Exit":
             break
 
