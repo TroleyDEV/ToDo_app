@@ -2,6 +2,8 @@
 
 import PySimpleGUI as sg
 
+sg.theme('DarkBlack')
+
 # Widgets declaration
 
 feet_label = sg.Text("Enter feet:")
@@ -11,6 +13,7 @@ inches_label = sg.Text("Enter inches:")
 inches_input = sg.Input(key="inches")
 
 button = sg.Button("Convert")
+exit_button = sg.Button("Exit")
 result = sg.Text(key="result")
 
 # Window declaration
@@ -18,20 +21,22 @@ result = sg.Text(key="result")
 window = sg.Window("Convertor",
                    layout=[[feet_label, feet_input],
                            [inches_label, inches_input],
-                           [button, result]],
+                           [button, exit_button, result]],
                    font=('Helvetica', 20))
 
 # Main loop
 
 while True:
     event, values = window.read()
+    if event == sg.WINDOW_CLOSED:
+        break
     print(event)
     print(values)
     match event:
         case "Convert":
             meters = float(values["feet"]) * 0.3048 + float(values["inches"]) * 0.0254
             window["result"].update(value=f'{meters} m')
-        case sg.WINDOW_CLOSED:
+        case "Exit":
             break
 
 window.close()
