@@ -34,8 +34,11 @@ while True:
     print(values)
     match event:
         case "Convert":
-            meters = float(values["feet"]) * 0.3048 + float(values["inches"]) * 0.0254
-            window["result"].update(value=f'{meters} m')
+            try:
+                meters = float(values["feet"]) * 0.3048 + float(values["inches"]) * 0.0254
+                window["result"].update(value=f'{meters} m')
+            except ValueError:
+                sg.popup("Please enter correct Value")
         case "Exit":
             break
 
